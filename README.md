@@ -6,7 +6,6 @@
   </p>
 </div>
 <img src="Screenshot\AnsPacker-v1.0.0.png" alt="AnsPacker"/>
----
 
 ## ✨ 核心特性
 
