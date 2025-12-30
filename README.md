@@ -73,16 +73,14 @@ AnsPacker/
 ├── requirements.txt        # 依赖列表（PyInstaller）
 ├── README.md              # 项目说明文档
 ├── LICENSE                # MIT 开源协议
-└── resources/
-    └── icons/
-        └── AnsPack.ico    # 程序图标（32x32 ICO 格式）
+└── resources/             # 图片资源
 ```
 
 ## 🔧 技术栈与实现细节
 
 - **GUI 框架**：Tkinter + ttk，采用 `clam` 主题引擎深度定制
 - **打包引擎**：PyInstaller（通过 `subprocess` 实时读取输出流）
-- **编码处理**：UTF-8 编码 + `backslashreplace` 错误处理，完美支持中文路径
+- **编码处理**：UTF-8 编码 + `backslashreplace` 错误处理，支持多语言路径
 - **并发处理**：多线程执行打包任务，避免界面冻结
 - **错误处理**：完整的异常捕获与日志分析，智能判断 PyInstaller 安装状态
 - **资源嵌入**：智能处理 `--add-data` 参数，自动适配 Windows/Linux/macOS 路径格式
