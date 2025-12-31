@@ -598,7 +598,7 @@ class AnsPackerGUI:
             self.extra_params_entry.delete(0, 'end')
             self.extra_params_entry._show_placeholder()
             
-            # 重置复选框（修改：noconsole默认勾选）
+            # 重置复选框
             self.onefile_var.set(True)
             self.noconsole_var.set(True)
             self.debug_var.set(False)
@@ -613,7 +613,7 @@ class AnsPackerGUI:
     
     def show_about(self):
         """打开项目GitHub页面"""
-        webbrowser.open("https://github.com/Ancylx")
+        webbrowser.open("https://github.com/Ancylx/AnsPacker")
     
     def gather_config(self):
         """收集所有配置信息"""
