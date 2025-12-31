@@ -108,7 +108,7 @@ class AnsPackerGUI:
     
     def setup_window(self):
         """窗口初始化设置"""
-        self.root.title("AnsPacker-v1.0.0")
+        self.root.title("AnsPacker-v1.0.1")
         self.root.geometry("1200x800")
         self.root.minsize(985, 675)
         
